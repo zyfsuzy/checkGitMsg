@@ -1,6 +1,8 @@
 
 # hgit
-### 基于 cz-customizable 改造的规范化 commit msg 信息， 支持 jira issue, 并展示 review web url （Review 地址）
+
+基于 cz-customizable 改造的规范化 commit msg 信息， 支持 jira issue, 并展示 review web url （Review 地址）
+
 ### 如何使用
 
 ```
