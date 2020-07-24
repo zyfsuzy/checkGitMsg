@@ -1,5 +1,6 @@
-# hgit
 
+# hgit
+### 基于cz-commitable 改造的规范化 commit msg 信息， 支持 jira issue 
 ### 如何使用
 
 ```
@@ -34,4 +35,6 @@ $ hgit cz
 ```
 $ hgit push
 ```
+### 效果
+
 
