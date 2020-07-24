@@ -41,9 +41,9 @@ $ hgit push
 
 ### 相关工具
 
-- [](https://github.com/commitizen/cz-cli) 
-- [](https://github.com/leonardoanalista/corp-semantic-release) 
-- [](https://github.com/semantic-release/semantic-release) 
-- [](https://github.com/uglow/cz-customizable-ghooks) 
+- https://github.com/commitizen/cz-cli 
+- https://github.com/leonardoanalista/corp-semantic-release 
+- https://github.com/semantic-release/semantic-release
+- https://github.com/uglow/cz-customizable-ghooks
 
 
