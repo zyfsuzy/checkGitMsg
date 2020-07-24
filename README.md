@@ -1,9 +1,10 @@
 # hgit
 
-### 安装组件
+### 如何使用
 
 ```
-$ npm install -g @hnpm/hgit
+$ npm install 
+$ sudo npm link 
 ```
 
 ### 使用方法
@@ -34,4 +35,3 @@ $ hgit cz
 $ hgit push
 ```
 
-...详细用法请看confluence: http://confluence.haodf.net/pages/viewpage.action?pageId=53223411
