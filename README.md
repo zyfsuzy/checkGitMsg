@@ -45,5 +45,6 @@ $ hgit push
 - https://github.com/leonardoanalista/corp-semantic-release 
 - https://github.com/semantic-release/semantic-release
 - https://github.com/uglow/cz-customizable-ghooks
+- https://github.com/leoforfree/cz-customizable
 
 
