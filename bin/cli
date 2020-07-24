@@ -1,0 +1,68 @@
+#! /usr/bin/env node
+
+const program = require('commander');
+
+const version = require('../package.json').version;
+program.usage('<command> [option]').version(version, '-v, --version');
+
+program.on('command:*', function () {
+  console.error('Invalid command: %s\nSee --help for a list of available commands.', program.args.join(' '));
+  process.exit(1);
+});
+
+program
+  .command('add')
+  .description('将工作目录中的改动添加到暂存区中')
+  .action(function (input) {
+    const filenames = input.args;
+    require('../cmd/_add.js')(filenames);
+  });
+
+program
+  .command('status')
+  .alias('st')
+  .description('查看文件在工作目录和暂存区的状态')
+  .action(function () {
+    require('../cmd/_status.js');
+  })
+
+program
+  .command('commit')
+  .alias('cz')
+  .description('将暂存区里的改动提交到本地的版本库')
+  .action(function () {
+    require('../cmd/_commit.js');
+  });
+
+// program
+//   .command('restore')
+//   .alias('rt')
+//   .description('放弃本地某个文件或全部文件的修改')
+//   .action(function (input) {});
+
+program
+  .command('reset')
+  .alias('rs')
+  .description('恢复到之前提交的某个版本')
+  .action(function () {
+    require('../cmd/_reset.js');
+  });
+
+program
+  .command('pull')
+  .description('拉取远程仓库的代码更新, 并与本地分支合并')
+  .action(function () {
+    require('../cmd/_pull.js');
+  });
+
+program
+  .command('push')
+  .description('将本地的版本库同步到远程的版本库')
+  .action(function () {
+    require('../cmd/_push.js');
+  });
+
+if (!process.argv.slice(2).length) {
+  program.help();
+}
+program.parse(process.argv);
