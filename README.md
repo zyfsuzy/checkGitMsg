@@ -36,7 +36,5 @@ $ hgit cz
 $ hgit push
 ```
 ### 效果
-![](https://github.com/zyfsuzy/checkGitMsg/blob/master/picture/WechatIMG4.png)
-![](https://github.com/zyfsuzy/checkGitMsg/blob/master/picture/WechatIMG5.png)
-![](https://github.com/zyfsuzy/checkGitMsg/blob/master/picture/WechatIMG6.png)
+
 
