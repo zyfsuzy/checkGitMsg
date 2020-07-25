@@ -38,6 +38,9 @@ $ hgit cz
 $ hgit push
 ```
 ### 效果
+![](https://github.com/zyfsuzy/checkGitMsg/blob/master/picture/1.png)
+![](https://github.com/zyfsuzy/checkGitMsg/blob/master/picture/3.png)
+![](https://github.com/zyfsuzy/checkGitMsg/blob/master/picture/2.png)
 
 ### 相关工具
 
